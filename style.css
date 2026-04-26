@@ -1,0 +1,132 @@
+:root {
+  --primary: #ff4fd8;
+  --primary-soft: #ff7be5;
+  --bg: #0b0f14;
+  --surface: #121821;
+  --border: rgba(255,255,255,0.08);
+  --text: #e6edf3;
+  --muted: #9da7b3;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* TYPOGRAPHY */
+h1,h2,h3,h4,h5 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(11,15,20,0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-link {
+  color: var(--muted) !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* BUTTON */
+.btn-primary {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+}
+
+.btn-primary {
+  box-shadow: 0 0 20px rgba(255, 79, 216, 0.2);
+}
+
+.btn-outline-light {
+  border: 1px solid var(--border);
+}
+
+/* CARD */
+.card-dark {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.card-dark:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 79, 216, 0.3);
+}
+
+/* TEXT */
+.text-accent {
+  background: linear-gradient(90deg, #ff4fd8, #ff9af2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+h1 {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SECTION */
+section {
+  padding: 100px 0;
+}
+
+/* IMAGE */
+img {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* FORM */
+.form-control {
+  background: #0f141b;
+  border: 1px solid var(--border);
+  color: white;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: none;
+}
+
+/* FOOTER */
+footer {
+  background: #0a0d12;
+}
