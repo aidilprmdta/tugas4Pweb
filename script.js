@@ -34,10 +34,9 @@ class RDODataService {
 
     getTeam() {
         return [
-            new TeamMember('Marcus Thorne', 'PRINCIPAL ORCHESTRATOR', 'https://placehold.co/400x400/13151f/8a2be2?text=MT'),
-            new TeamMember('Elena Vance', 'LEAD IOT ENGINEER', 'https://placehold.co/400x400/13151f/8a2be2?text=EV'),
-            new TeamMember('Kenji Sato', 'SYS ARCHITECT', 'https://placehold.co/400x400/13151f/8a2be2?text=KS'),
-            new TeamMember('Sarah Chen', 'COMMUNITY LEAD', 'https://placehold.co/400x400/13151f/8a2be2?text=SC')
+            new TeamMember('Pohan Asshidiqi', 'Head RDO (Riau DevOps)', 'https://placehold.co/400x400/13151f/8a2be2?text=AP'),
+            new TeamMember('Aidil Pramadita Putra', 'Vice Head Of Software Development', 'https://placehold.co/400x400/13151f/8a2be2?text=APP'),
+            new TeamMember('Assyaj Abdul Qais', 'Vice Head Of IoT Development', 'https://placehold.co/400x400/13151f/8a2be2?text=AAQ'),
         ];
     }
 
@@ -45,22 +44,53 @@ class RDODataService {
         return [
             new ServiceOffering(
                 'DevOps Mastery', 
-                'Advanced CI/CD pipelines, container orchestration, and site reliability engineering workflows.', 
-                ['Pipeline Orchestration', 'Container Strategy'],
+                'Mempelajari seputar DevOps dan membuat sistem berbasis perangkat keras.', 
+                ['CI/CD Pipelines', 'Container Orchestration', 'Cloud Computing'],
                 '⚙️'
             ),
             new ServiceOffering(
                 'IoT Fabrication', 
-                'From sensor deployment to data visualization. Full-stack hardware-to-cloud infrastructure.', 
-                ['Edge Computation', 'Telemetry Networks'],
+                'Mempelajari seputar Internet of Things dan membuat sistem berbasis perangkat keras.', 
+                ['Edge Computation', 'Telemetry Networks', 'System Optimization'],
                 '📟'
             ),
             new ServiceOffering(
                 'Software Labs', 
-                'Intensive courses on React, Go, and TypeScript for building enterprise-level systems.', 
-                ['Microservices Arch', 'System Optimization'],
+                'Mempelajari seputar Pemrograman dan membuat sistem berbasis perangkat lunak.', 
+                ['Web Development', 'System Optimization', 'Mobile Development'],
                 '💻'
-            )
+            ),
+            new ServiceOffering(
+                'UI/UX Design', 
+                'Mempelajari seputar UI/UX Design dan membuat tampilan yang menarik dan mudah digunakan.', 
+                ['Figma', 'Adobe XD', 'Prototyping'],
+                '🎨'
+            ),
+            new ServiceOffering(
+                'Cloud Computing', 
+                'Mempelajari seputar Cloud Computing dan membuat sistem berbasis cloud.', 
+                ['Cloud Architecture', 'Server Management', 'System Optimization'],
+                '☁️'
+            ),
+            new ServiceOffering(
+                'Database System', 
+                'Mempelajari seputar Database System dan membuat sistem berbasis database.', 
+                ['Database Architecture', 'Database Management', 'System Optimization'],
+                '🗄️'
+            ),
+            new ServiceOffering(
+                'AI/ML Development', 
+                'Mempelajari seputar AI/ML Development dan membuat sistem berbasis kecerdasan buatan.', 
+                ['AI Architecture', 'ML Development', 'System Optimization'],
+                '🤖'
+            ),
+            new ServiceOffering(
+                'Data Science', 
+                'Mempelajari seputar Data Science dan membuat sistem berbasis data.', 
+                ['Data Architecture', 'Data Management', 'System Optimization'],
+                '📊'
+            ),
+            
         ];
     }
 }

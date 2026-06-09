@@ -28,8 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-3">
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#history">Sejarah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#programs">Program</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Tim</a></li>
                     <li class="nav-item"><a class="btn btn-primary px-4 ms-lg-2 rounded-pill" href="#contact">Bergabung</a></li>
@@ -46,9 +45,12 @@
             <h1 class="display-3 fw-bold mb-4">
                 Riau DevOps <br/> <span class="text-accent">Organization</span>
             </h1>
-            <p class="lead text-muted mx-auto mb-5" style="max-width: 600px;">
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
                 Komunitas pengembang yang berfokus pada DevOps, IoT, dan pengembangan sistem modern di Riau. Membangun infrastruktur untuk masa depan.
             </p>
+            <h4 class="fw-bold text-uppercase text-primary mb-3">
+                Develop, Deploy And Deliver With RDO
+            </h4>
             <div class="d-flex justify-content-center flex-wrap gap-3">
                 <a href="#about" class="btn btn-primary btn-lg px-4 py-2 rounded-pill">Pelajari Lebih Lanjut</a>
                 <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill">Hubungi Kami</a>
@@ -62,14 +64,14 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="About RDO">
+                        <img src="/logo.jpg" class="img-fluid rounded-4 shadow-lg" alt="About RDO">
                         <div class="glow-bg" style="top: 50%; left: 50%; width: 50%; height: 50%;"></div>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2 class="fw-bold mb-4">Membangun Ekosistem <br/><span class="text-accent">Teknologi</span></h2>
                     <p class="text-muted mb-4 fs-5">
-                        Riau DevOps Organization (RDO) adalah komunitas progresif yang bertujuan mengembangkan kemampuan mahasiswa dan developer profesional dalam bidang DevOps, IoT, dan teknologi modern di tingkat regional.
+                        Riau DevOps merupakan suatu labsquad dari jurusan Teknik Informatika UIN Suska Riau yang mempelajari seputar DevOps yaitu dari segi development maupun operations di Riau. Makna Riau sendiri tercipta dari pengembangan lab itu sendiri yang masih berpusat di Provinsi Riau. Nah pembahasan labsquad ini cakupannya cukup luas loh, namun labsquad ini dapat membahasnya dimulai dari Web development, otomasi, cloud, hosting, hingga hal advance.
                     </p>
                     <div class="row g-4 mt-2">
                         <div class="col-sm-6">
@@ -77,7 +79,7 @@
                                 <div class="icon-box bg-soft-primary text-primary mb-3">
                                     <i class="bi bi-eye"></i>
                                 </div>
-                                <h5 class="fw-bold">Visi</h5>
+                                <h5 class="fw-bold text-white">Visi</h5>
                                 <p class="text-muted mb-0 small">Menjadi pusat inovasi teknologi unggulan di bidang DevOps dan IoT tingkat regional.</p>
                             </div>
                         </div>
@@ -86,7 +88,7 @@
                                 <div class="icon-box bg-soft-primary text-primary mb-3">
                                     <i class="bi bi-rocket"></i>
                                 </div>
-                                <h5 class="fw-bold">Misi</h5>
+                                <h5 class="fw-bold text-white">Misi</h5>
                                 <ul class="text-muted mb-0 small ps-3">
                                     <li class="mb-1">Meningkatkan skill</li>
                                     <li class="mb-1">Project nyata</li>
@@ -96,27 +98,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- History / Timeline Section -->
-    <section class="py-5 bg-surface" id="history">
-        <div class="container py-5" data-aos="fade-up">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Perjalanan <span class="text-accent">Kami</span></h2>
-                <p class="text-muted">Sejarah perkembangan RDO dari masa ke masa</p>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <template x-for="(event, index) in timelineData" :key="index">
-                    <div class="col-md-4" data-aos="fade-up" :data-aos-delay="index * 100">
-                        <div class="timeline-card card-dark p-4 rounded-4 h-100 position-relative overflow-hidden">
-                            <div class="year-badge text-accent fw-bold fs-3 mb-2" x-text="event.year"></div>
-                            <h5 class="fw-bold text-white mb-3" x-text="event.title"></h5>
-                            <p class="text-muted small mb-0" x-text="event.desc"></p>
-                        </div>
-                    </div>
-                </template>
             </div>
         </div>
     </section>
@@ -131,7 +112,7 @@
             <div class="row g-4">
                 <template x-for="(offering, index) in offeringsData" :key="index">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" :data-aos-delay="index * 100">
-                        <div class="card card-dark p-4 h-100 rounded-4 offering-card">
+                        <div class="card card-dark p-4 h-100 rounded-4 offering-card text-white">
                             <div class="icon-box bg-soft-primary text-primary fs-3 mb-4" x-text="offering.iconSvg"></div>
                             <h4 class="fw-bold mb-3" x-text="offering.title"></h4>
                             <p class="text-muted mb-4" x-text="offering.desc"></p>
@@ -151,7 +132,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-5 bg-surface" id="team">
+    <section class="py-5" id="team">
         <div class="container py-5" data-aos="fade-up">
             <div class="text-center mb-5">
                 <h2 class="fw-bold">Struktur <span class="text-accent">Organisasi</span></h2>
@@ -181,7 +162,7 @@
                     <div class="card card-dark p-4 p-md-5 rounded-4 shadow-lg position-relative overflow-hidden">
                         <div class="glow-bg" style="top: 0; right: 0; width: 300px; height: 300px; opacity: 0.1;"></div>
                         <div class="text-center mb-4 position-relative z-1">
-                            <h2 class="fw-bold mb-2">Mari <span class="text-accent">Berkolaborasi</span></h2>
+                            <h2 class="fw-bold mb-2 text-white">Mari <span class="text-accent">Berkolaborasi</span></h2>
                             <p class="text-muted">Bergabunglah dengan kami atau sampaikan pesan Anda.</p>
                         </div>
                         <form @submit.prevent="submitForm" class="position-relative z-1">
@@ -220,10 +201,9 @@
                 <i class="bi bi-braces text-accent"></i> RDO
             </h4>
             <div class="d-flex justify-content-center gap-4 mb-4">
-                <a href="#" class="text-muted text-hover-white fs-4"><i class="bi bi-github"></i></a>
-                <a href="#" class="text-muted text-hover-white fs-4"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="text-muted text-hover-white fs-4"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="text-muted text-hover-white fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/riaudevops" class="text-muted text-hover-white fs-4"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/company/riaudevops/" class="text-muted text-hover-white fs-4"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/riaudevops/" class="text-muted text-hover-white fs-4"><i class="bi bi-instagram"></i></a>
             </div>
             <p class="text-muted small mb-0">© 2026 Riau DevOps Organization. All rights reserved.</p>
         </div>
